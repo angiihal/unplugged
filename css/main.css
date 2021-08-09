@@ -94,7 +94,8 @@ textarea {
 
 /*---------- BASE HEADER - FOOTER STYLES ----------*/
 
-header, footer {
+header, 
+footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -117,6 +118,7 @@ header .content-wrapper {
 
 header .header-divider {
   width: 100%;
+  height: 1px;
   margin: 10px 0 20px 0;
 }
 
@@ -376,7 +378,7 @@ footer .copyright {
     margin: 100px 0;
   }
 
-  /* HEADER STYLES */
+  /* ---------- HEADER STYLES ---------- */
 
   header {
     justify-content: space-around;
@@ -400,9 +402,7 @@ footer .copyright {
     display: none;
   }
 
-  /* HERO AREA */
-
-  /* ASIDE */
+  /* ---------- FORM SECTION STYLES ---------- */
 
   aside .content-wrapper {
     margin: 50px 0;
@@ -417,7 +417,7 @@ footer .copyright {
     margin: 0;
   }
 
-  /* FEATURES */
+  /* ---------- FEATURES SECTION STYLES ---------- */
 
   .features article {
     display: flex;
@@ -428,10 +428,10 @@ footer .copyright {
   }
 
   .features .features-item-description {
-    width: 50%;
+    width: 62%;
   }
 
-  /* REVIEWS */
+  /* ---------- REVIEWS SECTION STYLES ---------- */
 
   .reviews article {
     display: flex;
@@ -439,10 +439,10 @@ footer .copyright {
   }
 
   .reviews article div {
-    width: 50%;
+    width: 49%;
   }
 
-  /* FOOTER */
+  /* ---------- FOOTER ---------- */
 
   footer .content-wrapper {
     width: 65%;
@@ -461,9 +461,11 @@ footer .copyright {
 
   footer .copyright {
     width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
-  /* ABOUT PAGE */
+  /* ---------- ABOUT PAGE ---------- */
 
   .mission-content {
     display: flex;
@@ -486,7 +488,11 @@ footer .copyright {
     align-items: flex-start;
   }
 
-  /* FAQ PAGE */
+  /* ---------- FAQ PAGE ---------- */
+
+  header {
+    padding: 15px 0;
+  }
 
   .faq .content-wrapper {
     justify-content: space-between;
@@ -504,7 +510,54 @@ footer .copyright {
 /* ---------- DESKTOP STYLES ---------- */
 
 @media only screen and (min-width: 1200px) {
+  .content-wrapper {
+    max-width: 960px;
+  }
 
+  /* HERO AREA */ 
+  .hero-area h1 {
+    width: 60%;
+  }
+
+  /* ----------- FORM SECTION STYLES ---------- */
+
+  aside .content-wrapper {
+    justify-content: space-around;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 30%;
+  }
+
+  /* ---------- FEATURES SECTION STYLES ---------- */
+
+  .features h2 {
+    width: 90%;
+  }
+
+  .features article {
+    flex-basis: 33%;
+  }
+
+  /* ---------- REVIEWS SECTION STYLES ---------- */
+
+  .reviews article div {
+    width: 42%;
+  }
+
+  /* ---------- ABOUT PAGE ---------- */
+
+  .mission h2,
+  .contact-section .content-wrapper h2 {
+    width: 95%;
+  }
+
+  /* ---------- FAQ PAGE ---------- */
+
+  .faq h2 {
+    width: 100%;
+  }
 }
 
 /* ==========================================================================
