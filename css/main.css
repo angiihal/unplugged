@@ -425,10 +425,15 @@ footer .copyright {
 
 .faq h2 {
   margin-bottom: 40px;
+  line-height: 1;
 }
 
-.faq-content {
+.question {
   margin-bottom: 50px;
+}
+
+.question h4 {
+  line-height: 1.333;
 }
 
 /* ==========================================================================
@@ -661,12 +666,18 @@ footer .copyright {
     justify-content: space-between;
   }
 
-  .faq-content {
+  .question {
     flex-basis: 45%;
   }
 
   .faq h2 {
     width: 100%;
+  }
+
+  .faq h4,
+  .faq p {
+      font-size: .875em;
+      line-height: 1.125;
   }
 }
 
