@@ -365,7 +365,11 @@ footer .copyright {
 
 .map figure {
   position: relative;
+<<<<<<< HEAD
   padding-bottom: 125%;
+=======
+  padding-bottom: 40%;
+>>>>>>> edbc332c7639ecb6d735db99fe3c4e74ffe72c75
   height: 0;
   overflow: hidden;
 }
